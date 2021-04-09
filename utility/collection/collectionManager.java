@@ -63,7 +63,7 @@ public class collectionManager {
         commandsinfo.offer("add_if_min - add new element to the collection, if it`s value less, " +
                 "than smallest element of this collection. You should to enter characteristics of" +
                 " comparing element after entering a command.");
-        commandsinfo.offer("remove_greater - remove from the collection all elements greater than the specified" +
+        commandsinfo.offer("remove_header  - remove from the collection head element" +
                 " one. You should to enter a height which will be comparing with element`s heights.");
         commandsinfo.offer("remove_lower - remove from the collection all elements less than the specified one." +
                 " You should to enter a height which will be comparing with element`s heights.");
@@ -669,9 +669,9 @@ public class collectionManager {
                         reader.readLine();
                         break;
                 }
-                System.out.println("Command is ended.");
+                System.out.println("Command reaches the termination.");
             }
-            System.out.println("Commands are ended.");
+            System.out.println("Commands reach termination.");
             reader.close();
         } catch (FileNotFoundException fileNotFoundException) {
             System.out.println("File not found. Try again.");
